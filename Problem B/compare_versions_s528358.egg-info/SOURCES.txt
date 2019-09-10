@@ -1,0 +1,6 @@
+README.md
+setup.py
+compare_versions_s528358.egg-info/PKG-INFO
+compare_versions_s528358.egg-info/SOURCES.txt
+compare_versions_s528358.egg-info/dependency_links.txt
+compare_versions_s528358.egg-info/top_level.txt

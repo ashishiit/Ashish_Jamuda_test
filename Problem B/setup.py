@@ -11,7 +11,7 @@ setuptools.setup(
     description="script to compare versions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/ashishiit/Ashish_Jamuda_test/tree/master/Problem%20B",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

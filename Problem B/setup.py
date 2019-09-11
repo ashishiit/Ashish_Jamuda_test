@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="compare-versions-s528358",
-    version="0.0.1.post1",
+    version="0.0.1.post2",
     author="Ashish Jamuda",
     py_modules=["compareVersions"],
     package_dir={'':'src'},

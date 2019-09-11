@@ -1,4 +1,4 @@
-def checkVersions(version1=None, version2=None):
+def checkCompareVersions(version1=None, version2=None):
     
     result =  Solution(version1, version2)
     if result > 0:

@@ -1,5 +1,5 @@
 import unittest
-from compareVersions import checkVersions
+from compareVersions import checkCompareVersions
 
 class Test(unittest.TestCase):
     def test_valid_testCases(self):
@@ -10,7 +10,7 @@ class Test(unittest.TestCase):
             [' 1.2.3.0.0.1.0', '1.2.3.0.0.1.0.0.0']
         ]
         for test_cases in equal_valid_testCases:
-            self.assertEqual(checkVersions(test_cases[0], test_cases[1]),'version1 is equal to version2')
+            self.assertEqual(checkCompareVersions(test_cases[0], test_cases[1]),'version1 is equal to version2')
 
         lessThan_valid_testCases = [
             ['1.1', '1.3'],

@@ -5,8 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="compare-versions-s528358",
-    version="0.0.1",
+    version="0.0.1.post1",
     author="Ashish Jamuda",
+    py_modules=["compareVersions"],
+    package_dir={'':'src'},
     author_email="ashish.turbobit@gmail.com",
     description="script to compare versions",
     long_description=long_description,
@@ -15,6 +17,8 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],

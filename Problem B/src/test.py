@@ -10,7 +10,7 @@ class Test(unittest.TestCase):
             [' 1.2.3.0.0.1.0', '1.2.3.0.0.1.0.0.0']
         ]
         for test_cases in equal_valid_testCases:
-            self.assertEqual(checkCompareVersions(test_cases[0], test_cases[1]),'version1 is equal to version2')
+            self.assertEqual(checkCompareVersions(test_cases[0], test_cases[1]),test_cases[0]+" is equal to "+test_cases[1])
 
         lessThan_valid_testCases = [
             ['1.1', '1.3'],
@@ -23,7 +23,7 @@ class Test(unittest.TestCase):
 
         ]
         for test_cases in lessThan_valid_testCases:
-            self.assertEqual(checkCompareVersions(test_cases[0], test_cases[1]), 'version1 is less than version2')
+            self.assertEqual(checkCompareVersions(test_cases[0], test_cases[1]), test_cases[0]+" is less than "+test_cases[1])
 
         greaterThan_valid_testCases = [
             ['1.2.1', '1.2.0'],
@@ -36,7 +36,7 @@ class Test(unittest.TestCase):
             [' 5', '1  .0.0.0. 0']
         ]
         for test_cases in greaterThan_valid_testCases:
-            self.assertEqual(checkCompareVersions(test_cases[0], test_cases[1]), 'version1 is greater than version2')
+            self.assertEqual(checkCompareVersions(test_cases[0], test_cases[1]), test_cases[0]+" is greater than "+test_cases[1])
 
     def test_invalid_testCases(self):
         invalid_testCases = [

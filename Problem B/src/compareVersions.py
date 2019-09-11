@@ -2,11 +2,11 @@ def checkCompareVersions(version1=None, version2=None):
     
     result =  Solution(version1, version2)
     if result > 0:
-        return "version1 is greater than version2"
+        return version1+" is greater than "+version2
     elif result < 0:
-        return "version1 is less than version2"
+        return version1+" is less than "+version2
     elif result == 0:
-        return "version1 is equal to version2"
+        return version1+" is equal to "+version2
 
 def Solution(version1, version2):
     

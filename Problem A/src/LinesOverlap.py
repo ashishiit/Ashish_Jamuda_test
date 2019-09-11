@@ -1,5 +1,5 @@
 def checkLinesOverlap(line1=None, line2=None):
-    #check for invalid test cases
+    '''check for invalid test cases'''
     if line1 is None and line2 is None:
         raise ValueError("checkLinesOverlap() needs two arguments (0 given)")
     elif line1 is None or line2 is None:
@@ -12,5 +12,5 @@ def checkLinesOverlap(line1=None, line2=None):
     return Solution(line1[0], line1[1], line2[0], line2[1]) or Solution(line2[0], line2[1], line1[0], line1[1])
 
 def Solution(a, b, c, d):
-    #check if co-ordinates of one line occurs between the co-ordinates of other line
+    '''check if co-ordinates of one line occurs between the co-ordinates of other line'''
     return min(c,d)<=a<=max(c,d) or min(c,d)<=b<=max(c,d)

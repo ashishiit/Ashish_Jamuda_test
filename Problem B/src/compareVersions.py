@@ -9,7 +9,7 @@ def checkCompareVersions(version1=None, version2=None):
         return version1+" is equal to "+version2
 
 def Solution(version1, version2):
-    #check for invalid test cases
+    '''check for invalid test cases'''
     if version1 is None and version2 is None:
         raise ValueError("checkVersions() needs 2 arguments (0 given)")
     elif version2 is None or version2 is None:
@@ -21,12 +21,12 @@ def Solution(version1, version2):
 
     len1 = len(version1)
     len2 = len(version2)
-    #append zeros to make the length of strings equal
+    '''append zeros to make the length of strings equal'''
     if len1 < len2:
         version1.extend([0]*(len2-len1))
     elif len2 < len1:
         version2.extend([0]*(len1-len2))
-    #compare the strings
+    '''compare the strings'''
     for i in range(len(version1)):
         if version1[i] != version2[i]:
             return version1[i]-version2[i]

@@ -17,3 +17,10 @@ expected output:
 "str1 is less than str2" OR
 
 "str1 is greater than str2"
+
+
+To run tests:
+
+go to src directory
+
+python test.py

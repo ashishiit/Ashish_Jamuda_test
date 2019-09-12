@@ -15,3 +15,9 @@ False
 Enter two lines in (x1,x2) and (x3,x4) format
 
 library returns True if the two lines overlap else False
+
+To run tests:
+
+go to src directory
+
+python test.py
